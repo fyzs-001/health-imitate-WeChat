@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
   
 
-  <script>
+   <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -38,7 +38,7 @@
         text-wrap: balance;
       }
       .article-container {
-        width: 1080px;
+        width: 1080px; /* 修改为固定宽度1080px */
       }
     }
   </style>
@@ -83,6 +83,11 @@
     
     .wechat-notification.show {
       transform: translateY(0);
+    }
+
+    /* 确保在小屏幕上可以横向滚动 */
+    body {
+      overflow-x: auto;
     }
   </style>
 </head>
