@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
   
 
-   <script>
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -38,7 +38,7 @@
         text-wrap: balance;
       }
       .article-container {
-        width: 1080px; /* 修改为固定宽度1080px */
+        max-width: 720px;
       }
     }
   </style>
@@ -84,11 +84,6 @@
     .wechat-notification.show {
       transform: translateY(0);
     }
-
-    /* 确保在小屏幕上可以横向滚动 */
-    body {
-      overflow-x: auto;
-    }
   </style>
 </head>
 <body class="bg-gray-50 font-sans text-dark">
@@ -102,10 +97,10 @@
         </div>
         <div class="flex-1 min-w-0">
           <div class="flex justify-between items-center mb-1">
-            <h3 class="font-medium text-gray-900 truncate">秋分养生提醒</h3>
+            <h3 class="font-medium text-gray-900 truncate">还有机会！</h3>
             <span class="text-xs text-gray-500">刚刚</span>
           </div>
-          <p class="text-sm text-gray-700 truncate">今日秋分，记得添衣润燥，做好养生防护哦~</p>
+          <p class="text-sm text-gray-700 truncate">还差 1 小时就达成活动小时数了</p>
         </div>
       </div>
     </div>
@@ -132,9 +127,9 @@
     
     <!-- 文章元数据 -->
     <div class="flex flex-wrap items-center text-sm text-gray-500 mb-8">
-      <span class="text-primary mr-4">节气养生</span>
+      <span class="text-primary mr-4">ABC健康</span>
       <span class="mr-4">2025年09月23日 10:08</span>
-      <span class="mr-4">山东</span>
+      <span class="mr-4">中国</span>
       <button class="flex items-center text-primary hover:underline transition-colors">
         <i class="fa fa-headphones mr-1"></i> 听全文
       </button>
@@ -246,7 +241,7 @@
       <div class="flex justify-between items-center">
         <div class="flex items-center">
           <img src="images/tx.png" alt="作者头像" class="w-10 h-10 rounded-full mr-3">
-          <span class="text-gray-700 font-medium">节气养生指南</span>
+          <span class="text-gray-700 font-medium">ABC健康</span>
         </div>
         
         <div class="flex space-x-6">
